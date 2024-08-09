@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"href="C:\Users\DELL\Desktop\HTML\style.css"/>
+    <script src="C:\Users\DELL\Desktop\HTML\app.js"defer="defer"></script>
+    </title>Password Generator App | onlineITtuts</title>
+</head>
+<body>
+    <main class ="Container">
+        <h1>Password Generator</h1>
+        <div class="password_field">
+        <span class ="password_display">
+        <span class="password_placeholder">#gyugu23@4</span>
+    </span>
+    <div class ="copy_wrapper">
+        <span class="copy_text"></span>
+        <button type="button" class="copy_btn"> 
+            <img src="./images/icon-copy.svg"alt=""/>
+             </button>
+    </div>
+        </div>
+
+      <form action="" class="password_setting">
+        <div class="Char_length">
+            <p>Character Length</p>
+            <span class="char_count">0</span>
+           </div>
+           <input
+           type="range"
+           class="Char_length_slider"
+           min="1"
+           max="30"
+           value="15"
+           autocomplete="off"
+          />
+          <div class="char_include_group">
+            <label> 
+                <input type="checkbox" id="uppercase" value="uppercase" />
+                <span class="custom_checkbox"></span>
+                <p>Include Uppercase Letters</p>
+            </label>
+            <label> 
+                <input type="checkbox" id="lowercase" value="lowercase"/>
+                <span class="custom_checkbox"></span>
+                <p>Include Lowercase Letters</p>
+            </label>
+            <label> 
+                <input type="checkbox" id="number" value="number"/>
+                <span class="custom_checkbox"></span>
+                <p>Include Numbers</p>
+            </label>
+            <label> 
+                <input type="checkbox" id="symbols" value="symbols"/>
+                <span class="custom_checkbox"></span>
+                <p>Include Symbol</p>
+            </label>
+          </div>
+       
+          <div class="strength_box">
+            <span class="strength_label">Strength</span>
+            <div class="strength_rating">
+                <span class="strength_rating_text">Strong</span>
+                <div class="strength_rating_bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                </div>
+            </div>
+          </div>
+          <button class="generate_btn" type="submit">
+          <span>Generate</span>
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path 
+            fill="#24232c" d="m5.106 12 
+            6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+
+          </form>
+
+        </main>
+</body>
+</html>
